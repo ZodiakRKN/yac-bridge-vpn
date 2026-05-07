@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">YAC Bridge VPN</string>
+    <string name="pref_gateway_url">Gateway URL</string>
+    <string name="pref_gateway_url_summary">WebSocket адрес API Gateway</string>
+    <string name="pref_auth_token">Auth Token</string>
+    <string name="pref_auth_token_summary">Секретный ключ авторизации</string>
+    <string name="pref_listen_port">SOCKS5 порт</string>
+    <string name="pref_listen_port_summary">Локальный порт прокси (по умолчанию 1080)</string>
+</resources>

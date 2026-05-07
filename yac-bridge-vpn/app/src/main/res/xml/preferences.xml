@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="Подключение">
+
+        <EditTextPreference
+            android:key="gateway_url"
+            android:title="@string/pref_gateway_url"
+            android:summary="@string/pref_gateway_url_summary"
+            android:defaultValue="wss://d5d39r7l30a40c2n6joc.uvah0e6r.apigw.yandexcloud.net/_helper"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:key="auth_token"
+            android:title="@string/pref_auth_token"
+            android:summary="@string/pref_auth_token_summary"
+            android:defaultValue="3f4hjfjn"
+            android:inputType="textPassword"
+            app:useSimpleSummaryProvider="true" />
+
+        <EditTextPreference
+            android:key="listen_port"
+            android:title="@string/pref_listen_port"
+            android:summary="@string/pref_listen_port_summary"
+            android:defaultValue="1080"
+            android:inputType="number" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="Дополнительно">
+
+        <SwitchPreferenceCompat
+            android:key="use_relay"
+            android:title="Режим Relay"
+            android:summary="Включить если gRPC недоступен (медленнее)"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
