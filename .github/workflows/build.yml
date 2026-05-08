@@ -33,10 +33,11 @@ jobs:
 
       - name: Build Debug APK
         run: gradle assembleDebug
+        working-directory: yac-bridge-vpn
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
           name: yac-bridge-vpn-debug
-          path: app/build/outputs/apk/debug/app-debug.apk
+          path: yac-bridge-vpn/app/build/outputs/apk/debug/app-debug.apk
           retention-days: 30
